@@ -31,11 +31,14 @@ This page is intended to answer your questions about Umbrel.
 ### Structure
 
 1. Introduction (this page)
-1. [FAQ](faq.md): frequently asked questions and further reading
-1. [Troubleshooting](troubleshooting.md): debug your system if you have problems
+2. [Troubleshooting](troubleshooting.md): Issues concerning the primary operations of your Umbrel node.
+3. [General FAQ](faq.md): General questions and further learnings regarding the technology used in Umbrel.
+
+---
 
 ## A word of caution
+
 Umbrel I still in beta and should not be considered secure.
 We do not recommend running it with much money yet.
 
------
+---
