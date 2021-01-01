@@ -29,9 +29,13 @@ General questions and further learnings regarding the technology used in Umbrel 
 
 Yes! The username is `umbrel`, the password is `moneyprintergobrrr`.
 
+#### Changing the default SSH password
+
+SSH into your Umbrel, run `passwd` and follow the instructions.
+
 #### Is my Raspberry Pi compatible?
 
-If you have a Raspberry Pi with at least 4GB of RAM, you can run Umbrel on it.
+If you have a Raspberry Pi with at least 4GB of RAM, you can run Umbrel on it. If you can afford the 8GB version it might worth considering because with the App Store all kinds of new apps can benefit from the additional memory.
 
 #### My Umbrel node keeps crashing. What can I do to fix the issue?
 
@@ -111,6 +115,17 @@ This can be done by configuring the DHCP-Client (on the Pi) to advertise a stati
 
 - Replace `[COUNTRY_CODE]` with the [ISO2 code](https://www.iso.org/obp/ui/#search){:target="\_blank"} of your country (eg. `US`)
 - Replace `[WIFI_SSID]` and `[WIFI_PASSWORD]` with the credentials for your own WiFi.
+
+
+#### Saving the downloaded Bitcoin data before resetting everything
+
+Save the `/blocks` and `/chainstate` directories within`~/umbrel/bitcoin`. That way you won't have to download the whole chain again.
+
+#### How can I manually update my Umbrel if the web interface is not reachable?
+
+SSH into your Umbrel and manually run the OTA update:
+
+`cd ~/umbrel && sudo ./scripts/update/update --ota`
 
 ---
 
